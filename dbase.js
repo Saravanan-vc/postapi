@@ -5,11 +5,15 @@ const useschema = mongoose.Schema({
         type:String,
         require:true
     },
-
-},
-{
-timestamps:true
-});
+    email: {
+        type:String,
+        require:true
+    },
+ },
+ {
+   timestamps:true
+ }
+);
 
 const usemodel = mongoose.model('user',useschema);
 
